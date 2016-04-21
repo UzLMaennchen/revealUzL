@@ -1,0 +1,39 @@
+/**
+ * UzL Light theme for reveal.js.
+ * Author: Hendrik Wallbaum
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,latin-ext);
+
+$uzlBlue:	#004b5a;
+$uzlBlue80: #005a6a;
+$uzlBlue70: #0b6b7b;
+$uzlBlue50:	#5d929f;
+$uzlBlue10:	#dde8eb;
+$uzlBack:   rgb(237, 226, 228);
+$uzlLink:   rgb(60, 169, 213);
+$uzlLinkL:  tgb(194, 217, 230);
+$uzlOrange: rgb(236, 116, 4);
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: $uzlBlue70;
+$headingColor: $uzlBlue;
+$headingTextShadow: none;
+$backgroundColor: $uzlBack;
+$linkColor: $uzlLink;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $uzlOrange;
+
+$mainFont: "Myriad Pro", Myriad, 'PT Sand', "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headingFont: "Myriad Pro", Myriad, 'PT Sand', "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headingTextTransform: none;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
